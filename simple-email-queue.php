@@ -16,6 +16,8 @@
  * Author:      Milan Dinić
  * Author URI:  http://blog.milandinic.com/
  * Version:     0.4
+ * Text Domain: simple-email-queue
+ * Domain Path: /languages/
  * License:     GPL
  */
 
@@ -51,3 +53,34 @@ function simple_email_queue_add( $to, $subject, $message, $headers = '', $attach
 
 	$simple_email_queue->add_to_queue( $to, $subject, $message, $headers, $attachments );
 }
+
+/**
+ * Add action links to plugins page.
+ *
+ * @since 1.0
+ *
+ * @param array  $links       Existing plugin's action links.
+ * @param string $plugin_file Path to the plugin file.
+ * @return array $links New plugin's action links.
+ */
+function simple_email_queue_action_links( $links, $plugin_file ) {
+	// Set basename
+	$basename = plugin_basename( __FILE__ );
+
+	// Check if it is for this plugin
+	if ( $basename != $plugin_file ) {
+		return $links;
+	}
+
+	// Load translations
+	load_plugin_textdomain( 'simple-email-queue', false, dirname( $basename ) . '/languages' );
+
+	// Add new link
+	$links['donate']   = '<a href="http://blog.milandinic.com/donate/">' . __( 'Donate', 'simple-email-queue' ) . '</a>';
+	$links['wpdev']    = '<a href="http://blog.milandinic.com/wordpress/custom-development/">' . __( 'WordPress Developer', 'simple-email-queue' ) . '</a>';
+	$links['premium']  = '<strong><a href="https://shop.milandinic.com/downloads/simple-email-queue-plus/">' . __( 'Premium Version', 'simple-email-queue' ) . '</a></strong>';
+
+	return $links;
+}
+add_filter( 'plugin_action_links',               'simple_email_queue_action_links', 10, 2 );
+add_filter( 'network_admin_plugin_action_links', 'simple_email_queue_action_links', 10, 2 );
