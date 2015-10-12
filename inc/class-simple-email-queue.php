@@ -121,7 +121,7 @@ class Simple_Email_Queue {
 		 * Passing a truthy value to the filter will short-circuit setting
 		 * of queue value, returning the passed value instead.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0
 		 *
 		 * @param bool|mixed $pre_value Value to return instead of the value of setting.
 		 *                               Default false to skip it.
@@ -151,7 +151,7 @@ class Simple_Email_Queue {
 		 * Passing a truthy value to the filter will short-circuit retrieving
 		 * the queue value, returning the passed value instead.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0
 		 *
 		 * @param bool|mixed $pre_value Value to return instead of the queue value.
 		 *                               Default false to skip it.
@@ -221,7 +221,7 @@ class Simple_Email_Queue {
 		 * Passing a truthy value to the filter will short-circuit retrieving
 		 * the option value, returning the passed value instead.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0
 		 *
 		 * @param bool|mixed $pre_value Value to return instead of the status of sending email.
 		 *                               Default false to skip it.
