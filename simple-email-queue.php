@@ -15,7 +15,7 @@
  * Description: Put email in queue and send it one by one, by limits.
  * Author:      Milan Dinić
  * Author URI:  http://blog.milandinic.com/
- * Version:     0.4
+ * Version:     1.0
  * Text Domain: simple-email-queue
  * Domain Path: /languages/
  * License:     GPL
