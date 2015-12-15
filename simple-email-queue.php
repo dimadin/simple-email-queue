@@ -11,7 +11,7 @@
 
 /**
  * Plugin Name: Simple Email Queue
- * Plugin URI:  http://blog.milandinic.com/wordpress/plugins/
+ * Plugin URI:  http://blog.milandinic.com/wordpress/plugins/simple-email-queue/
  * Description: Put email in queue and send it one by one, by limits.
  * Author:      Milan Dinić
  * Author URI:  http://blog.milandinic.com/
