@@ -49,9 +49,7 @@ add_action( 'plugins_loaded', array( 'Simple_Email_Queue', 'plugins_loaded' ), 1
  * @param string|array $attachments Optional. Files to attach.
  */
 function simple_email_queue_add( $to, $subject, $message, $headers = '', $attachments = array() ) {
-	$simple_email_queue = Simple_Email_Queue::get_instance();
-
-	$simple_email_queue->add_to_queue( $to, $subject, $message, $headers, $attachments );
+	Simple_Email_Queue::get_instance()->add_to_queue( $to, $subject, $message, $headers, $attachments );
 }
 
 /**
