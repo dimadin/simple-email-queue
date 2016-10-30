@@ -313,6 +313,11 @@ class Simple_Email_Queue {
 	 * @access public
 	 */
 	public function maybe_schedule_task() {
+		// Check if this is Backdrop request
+		if ( did_action( 'wp_ajax_nopriv_hm_backdrop_run' ) ) {
+			return;
+		}
+
 		// Check if queue exists
 		$exists = WP_Temporary::get( 'simple_email_queue_exist' );
 		if ( ! $exists ) {
