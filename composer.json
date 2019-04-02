@@ -1,14 +1,14 @@
 {
 	"name": "dimadin/simple-email-queue",
 	"description": "Simple Email Queue",
-	"homepage": "https://github.com/dimadin/simple-email-queue",
+	"homepage": "https://milandinic.com/wordpress/plugins/simple-email-queue/",
 	"type": "wordpress-plugin",
 	"license": "GPL",
 	"authors": [
 		{
 			"name": "Milan Dinić",
 			"email": "milan@srpski.biz",
-			"homepage": "http://blog.milandinic.com/"
+			"homepage": "https://milandinic.com/"
 		}
 	],
 	"require": {
