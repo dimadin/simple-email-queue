@@ -13,7 +13,7 @@
 	],
 	"require": {
 		"composer/installers": "~1.0",
-		"dimadin/wp-temporary": "dev-master",
+		"dimadin/wp-temporary": "^1.0",
 		"dimadin/backdrop": "dev-master"
 	},
 	"autoload": {
