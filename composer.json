@@ -12,6 +12,7 @@
 		}
 	],
 	"require": {
+		"php": ">=5.4",
 		"composer/installers": "~1.0",
 		"dimadin/wp-temporary": "^1.0",
 		"dimadin/backdrop": "^1.0"
