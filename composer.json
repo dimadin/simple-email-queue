@@ -18,6 +18,6 @@
 		"dimadin/backdrop": "^1.0"
 	},
 	"autoload": {
-        "files": ["inc/class-simple-email-queue.php"]
-    }
+		"classmap": ["inc/class-simple-email-queue.php"]
+	}
 }
