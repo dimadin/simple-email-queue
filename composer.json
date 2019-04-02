@@ -3,7 +3,7 @@
 	"description": "Simple Email Queue",
 	"homepage": "https://milandinic.com/wordpress/plugins/simple-email-queue/",
 	"type": "wordpress-plugin",
-	"license": "GPL",
+	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
 			"name": "Milan Dinić",
