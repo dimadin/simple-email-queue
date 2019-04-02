@@ -1,6 +1,6 @@
 {
 	"name": "dimadin/simple-email-queue",
-	"description": "Simple Email Queue",
+	"description": "Put email in queue and send it one by one, by limits.",
 	"homepage": "https://milandinic.com/wordpress/plugins/simple-email-queue/",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",
