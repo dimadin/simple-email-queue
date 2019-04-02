@@ -9,6 +9,8 @@
  * @subpackage Class
  */
 
+use dimadin\WP\Library\Backdrop\Task;
+
 /* Exit if accessed directly */
 if ( ! defined( 'ABSPATH' ) ) exit;
 
@@ -30,6 +32,9 @@ class Simple_Email_Queue {
 
 		// Add temporaries garbage collector
 		add_action( 'wp_scheduled_delete', array( 'WP_Temporary', 'clean' ), 1 );
+
+		// Register listener for background processes from Backdrop library.
+		add_action( 'admin_init', array( '\dimadin\WP\Library\Backdrop\Main', 'init' ) );
 	}
 
 	/**
@@ -332,7 +337,7 @@ class Simple_Email_Queue {
 
 		// If number of sent is smaller than maximum number, schedule task
 		if ( $sent < $this->max() ) {
-			$task = new \HM\Backdrop\Task( array( $this, 'process_queue' ) );
+			$task = new Task( array( $this, 'process_queue' ) );
 			$task->schedule();
 		}
 	}

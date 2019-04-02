@@ -14,7 +14,7 @@
 	"require": {
 		"composer/installers": "~1.0",
 		"dimadin/wp-temporary": "^1.0",
-		"dimadin/backdrop": "dev-master"
+		"dimadin/backdrop": "^1.0"
 	},
 	"autoload": {
         "files": ["inc/class-simple-email-queue.php"]
