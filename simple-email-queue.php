@@ -74,9 +74,7 @@ function simple_email_queue_action_links( $links, $plugin_file ) {
 	load_plugin_textdomain( 'simple-email-queue', false, dirname( $basename ) . '/languages' );
 
 	// Add new links
-	$links['donate']   = '<a href="http://blog.milandinic.com/donate/">' . __( 'Donate', 'simple-email-queue' ) . '</a>';
-	$links['wpdev']    = '<a href="http://blog.milandinic.com/wordpress/custom-development/">' . __( 'WordPress Developer', 'simple-email-queue' ) . '</a>';
-	$links['premium']  = '<strong><a href="https://shop.milandinic.com/downloads/simple-email-queue-plus/">' . __( 'Premium Version', 'simple-email-queue' ) . '</a></strong>';
+	$links['premium']  = '<a href="https://shop.milandinic.com/downloads/simple-email-queue-plus/">' . __( 'Plus Version', 'simple-email-queue' ) . '</a>';
 
 	return $links;
 }
